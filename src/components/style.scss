@@ -1,0 +1,190 @@
+.home{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: C2DEDC;
+}
+
+.home{
+
+  .box{
+    height: 80%;
+    width: 70%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    border: 1px solid #164B60;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+}
+}
+
+.sidebar {
+
+  color: white;
+  background-color: #164B60;
+  display: flex;
+  flex-direction: column;
+  border-left: 5px;
+
+  .header{
+    height: 10%;
+    background-color: #2D4356;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px;
+    
+   .profile{
+    display: flex;
+    gap:5px
+ 
+   }
+
+   .profile button{
+    background-color: #164B60;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    font-size: x-small;
+    
+   }
+   .profile button:hover{
+    background-color: #40839d;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    
+   }
+
+
+    .profile img{
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+  
+  input{
+    background-color: #164B60;
+    padding: 5px;
+    outline: 1px solid lightgray; 
+    color: white;
+  }
+
+  input:focus{
+    padding: 5px;
+    background-color: #164B60;
+    outline: 1px solid white; 
+    border: none;
+  }
+
+  .users{
+    padding: 5px;
+    display: flex;
+    img{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      
+      object-fit: cover;
+      margin-right: 10px;
+
+    }
+
+    div{
+      display: flex;
+      flex-direction: column;
+      span:first-child{
+        font-size: x-small;
+      }
+      span{
+        font-size: xx-small;
+      }
+    }
+    
+  }
+}
+
+.home .main{
+  background-color: #DAFFFB;
+  border-right: 10px;
+  .header{
+    height: 10%;
+    background-color: #164B60;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-right: 10px;
+
+    svg,span{
+      margin: 10px;
+    }
+  }
+
+  .chatbox{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .users{
+     
+      padding: 5px;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+
+      img{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      div{
+        background-color: white;
+        padding: 5px;
+        border-radius: 0px 10px 10px 10px;
+      }
+
+    }
+
+    .profile{
+    
+      padding: 5px;
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 10px;
+
+      img{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      div{
+        background-color: skyblue;
+        padding: 5px;
+        border-radius: 10px 0px 10px 10px;
+      }
+     
+      
+    }
+
+
+  }
+
+
+
+
+
+    
+}
+
