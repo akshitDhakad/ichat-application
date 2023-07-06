@@ -1,5 +1,8 @@
 import React from 'react'
 import "./style.scss"
+import  Search from "./search"
+import Message from './Message'
+import Users from './Users'
 function Home() {
   return (
     <div className='home'>
@@ -14,62 +17,11 @@ function Home() {
                     
                     </div>
                 </div>
-                <input placeholder='seacrh here'/>
-                <div className='users'>
-                    <img src='https://i0.wp.com/www.anmolsms.com/wp-content/uploads/2020/12/43e4eebee019e145c343e2f3130a4824.jpg?ssl=1' alt="userprofile"/>
-                    <div>
-                        <span>samm</span>
-                        <span>see u tm</span>
-                    </div>
-                    
-                    
+                
+                    <Search/>
+                    <Users/>
+            
 
-                </div>
-                <div className='users'>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4yGAGLaTecIcm9EOtflmERrIvHHyMoHGJbw&usqp=CAU" alt="img"/>
-                    <div>
-                        <span>jhon</span>
-                        <span>ok tank you</span>
-                    </div>
-                    
-
-                </div>
-                <div className='users'>
-                    <img src='https://i.pinimg.com/736x/d5/a7/a6/d5a7a641eff0e09f95e0949e56621eb4.jpg' alt="userprofile"/>
-                    <div>
-                        <span>jyo</span>
-                        <span>ok tank you</span>
-                    </div>
-                    
-
-                </div>
-                <div className='users'>
-                    <img src='https://static8.depositphotos.com/1008303/880/i/450/depositphotos_8803246-Asian-college-student.jpg' alt="userprofile"/>
-                    <div>
-                        <span>hansni</span>
-                        <span>ok tank you</span>
-                    </div>
-                    
-
-                </div>
-                <div className='users'>
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYQVIGltth9eCnnDnUwKhnR6P_9S9235ceDQ&usqp=CAU" alt="img"/>
-                    <div>
-                        <span>janvi</span>
-                        <span>ok tank you</span>
-                    </div>
-                    
-
-                </div>
-                <div className='users'>
-                    <img src='https://images.pexels.com/photos/1553783/pexels-photo-1553783.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' alt="userprofile"/>
-                    <div>
-                        <span>suraj</span>
-                        <span>ok tank you</span>
-                    </div>
-                    
-                </div>
-               
             </div>
             <div className='main'>
                 <div className='header'>
@@ -87,16 +39,8 @@ function Home() {
 
                     </div>
                 </div>
-                <div className='chatbox'>
-                    <div className='users'>
-                        <img src='https://i.pinimg.com/originals/23/b0/1a/23b01a86088fe4c89e049406c09c6e23.jpg' alt='users'/>
-                        <div> samm msg display here</div>
-                    </div>
-                    <div className='profile'>
-                        <img src="https://i0.wp.com/www.anmolsms.com/wp-content/uploads/2020/12/43e4eebee019e145c343e2f3130a4824.jpg?ssl=1" alt='profile'/>
-                        <div> Ashna msg display here</div>
-                    </div>
-                </div>
+                <Message/>
+               
             </div>
         </div>
     </div>

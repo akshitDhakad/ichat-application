@@ -7,6 +7,7 @@
 }
 
 .home{
+  
 
   .box{
     height: 80%;
@@ -17,6 +18,7 @@
     border: 1px solid #164B60;
     border-radius: 5px;
     box-sizing: border-box;
+    overflow: hidden;
 
 }
 }
@@ -28,7 +30,7 @@
   display: flex;
   flex-direction: column;
   border-left: 5px;
-
+  
   .header{
     height: 10%;
     background-color: #2D4356;
@@ -40,7 +42,10 @@
     
    .profile{
     display: flex;
-    gap:5px
+    align-items: center;
+    gap:5px;
+    font-size: smaller;
+    font-family:  Helvetica, sans-serif;
  
    }
 
@@ -50,7 +55,8 @@
     border-radius: 5px;
     border: 1px solid lightgray;
     font-size: x-small;
-    
+
+    left: 0px;
    }
    .profile button:hover{
     background-color: #40839d;
@@ -59,7 +65,26 @@
     border: 1px solid lightgray;
     
    }
+   @media (max-width:596px) {
+    .profile button{
+      background-color: #164B60;
+      color: white;
+      border-radius: 5px;
+      border: 1px solid lightgray;
+      font-size: x-small;
+      display: absolute !important;
+      right: 0px;
+      bottom: 0px;
 
+     }
+     .profile button:hover{
+      background-color: #40839d;
+      color: white;
+      border-radius: 5px;
+      border: 1px solid lightgray;   
+     }
+  
+   }
 
     .profile img{
       width: 25px;
@@ -68,45 +93,68 @@
       object-fit: cover;
     }
   }
-  
-  input{
-    background-color: #164B60;
-    padding: 5px;
-    outline: 1px solid lightgray; 
-    color: white;
-  }
 
-  input:focus{
-    padding: 5px;
-    background-color: #164B60;
-    outline: 1px solid white; 
-    border: none;
+  .searchBtn{
+    border-bottom: 1px solid white;
+    input{
+      background-color: #164B60;
+      padding: 5px;
+      width: 100%;
+      // border: none;
+      color: white;
+   
+      &::placeholder{
+        color: white;
+        font-size: x-small;
+      }
+      &:focus{
+        padding: 5px;
+        background-color: #164B60;
+        // border: none;
+        outline: none;
+      }
+    }
+    .users{
+      padding: 5px;
+      display: flex;
+      flex-direction: row;
+      div{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+    };
+    
   }
 
   .users{
-    padding: 5px;
+    
     display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    div{
+      
+      padding: 5px;
+      display: flex;
+      font-size: x-small;
+      align-items: center;
+      div{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      
+    }
+  
     img{
       width: 30px;
       height: 30px;
       border-radius: 50%;
-      
       object-fit: cover;
       margin-right: 10px;
 
     }
-
-    div{
-      display: flex;
-      flex-direction: column;
-      span:first-child{
-        font-size: x-small;
-      }
-      span{
-        font-size: xx-small;
-      }
-    }
-    
   }
 }
 
