@@ -1,48 +1,54 @@
 import React from 'react'
-import "./style.css"
+import "./style.scss"
+import { Link } from 'react-router-dom'
 
 
 
 function Signup(props) {
   return (
-    <div>
-        <div class="content">
-            <div class="text">Sign Up</div>
-            <div >
-            <div class="field">
-                <span class="bx bxs-user"></span>
+    <div className='signup'>
+        <div className="content">
+            <div className="text">Sign Up</div>
+            <form >
+            <div className="field">
+                <span className="bx bxs-user"></span>
                 <input type="username" placeholder="Username" required/>
             </div>
 
-            <div class="field">
-                <span class="bx bxs-envelope"></span>
+            <div className="field">
+                <span className="bx bxs-envelope"></span>
                 <input type="email" placeholder="Email" required/>
             </div>
 
-            <div class="field">
-                <span class="bx bxs-lock-alt"></span>
+            <div className="field">
+                <span className="bx bxs-lock-alt"></span>
                 <input type="password" placeholder="Password" required/>
             </div>
-
-            <button>Sign Up</button>
-            <h4>or Sign up with social platforms</h4>
-
-            <div class="social_icons">
-                <i class="bx bxl-facebook"></i>
-                <i class="bx bxl-discord-alt"></i>
-                <i class="bx bxl-twitter"></i>
-                <i class="bx bxl-dribbble"></i>
+            <div className="field">
+                <button>Sign Up</button>
             </div>
 
-            <div class="foot">
-                <a href='...'>Already have an account?</a>
-                <button onClick={()=>props.data(true)} class="in">Log In</button>
-            </div>
-            </div>
+            
+           
+            </form>
+            <h6>or Sign up with social platforms</h6>
 
-            <div class="dark-light" onclick="myFunction()">
-            <i class="bx bx-moon moon"></i>
-            <i class="bx bx-sun sun"></i>
+                <div className="social_icons">
+                    <i className="bx bxl-facebook"></i>
+                    <i className="bx bxl-github"></i>
+                  
+                    <i className="bx bxl-google"></i>
+                  
+                </div>
+
+                <div className="foot">
+                    <Link to={"#"}>Already have an account?</Link>
+                    <button onClick={()=>props.data(true)} className="in">Log In</button>
+                </div>
+
+            <div className="dark-light" onclick="myFunction()">
+            <i className="bx bx-moon moon"></i>
+            <i className="bx bx-sun sun"></i>
             </div>
         </div>
     </div>

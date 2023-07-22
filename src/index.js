@@ -1,14 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+// import './index.scss';
 import App from './App';
+import {HandleLogin} from './components/Login';
+
+import { BrowserRouter as Router, Route,Routes } from 'react-router-dom';
 
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <>
-    <App />
-  </>
+  <Router>
+     <Routes>
+          <Route path="/" element={<App />} />
+    </Routes>
+
+    
+    <Routes>
+    <Route path="/Login" element={<HandleLogin />} />
+    </Routes>
+  </Router>
 );
 
